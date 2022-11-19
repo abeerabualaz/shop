@@ -1,0 +1,91 @@
+
+
+
+body{
+   perspective: 300px; 
+   min-height: 2000px;
+}
+
+
+.father{
+flex-wrap: nowrap;
+height: 100vh;
+    transform-style: preserve-3d;/*لتهيئه الموقع لل(3d)*/
+    float: right;
+    height: 600px;
+    width: 350px; 
+  padding: 10px;
+    float: right;
+    position: relative;
+    transition: 3s; 
+    background-color: rgb(202, 197, 197);
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    background-size: cover;
+
+}
+.father img{
+padding: 20px 20px;
+}
+.front,.back{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+margin: auto;
+}
+
+.front{
+    z-index: 1;
+    backface-visibility:hidden ;/*خلف الصوره مخفي*/
+    float: right;
+
+}
+ .front:hover{
+     transform: rotatey(200deg);
+     transition: 3s;}
+
+.td{
+ position: absolute;
+ z-index: 2;
+ backface-visibility: hidden;
+ margin-top: 470px;
+ margin-left: 160px;
+margin-top: 510px;
+ text-align: :right;
+
+}
+
+.ul{
+    z-index: 2;
+    position: absolute;
+    font-size: 20px;
+    margin-top: 420px;
+    margin-left: 130px;
+  float: right;
+    list-style: none;
+    text-align: right;
+    overflow: auto;
+}
+.but{
+    width: 60px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: rgb(58, 141, 102);
+    color: white;
+    border: none;
+    margin-top: 10px;
+    float: right;
+}
+
+.but a{
+    color: white;
+    text-decoration: none;
+
+}
+.star{
+    color: yellow;
+    font-size: 1.7rem
+}
+
